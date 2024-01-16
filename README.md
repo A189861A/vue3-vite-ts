@@ -49,3 +49,4 @@ npm run lint
 - 编译器宏（compiler macros） 有：defineProps、defineEmits、withDefaults、defineExpose 等。
 - 编译器宏只能在 <script setup>  块中使用，不需要被导入，并且会在处理 <script setup> 块时被一同编译掉。
 - 编译器宏必须在 <script setup>  的顶层使用，不可以在 <script setup>  的局部变量中引用。
+- 不要定义和 props 的属性同名的顶层变量，因为编译器宏会覆盖这些变量。
