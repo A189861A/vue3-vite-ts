@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
 // js版本
 // defineProps({
 //   msg: String,
@@ -9,6 +11,10 @@ defineProps<{
   msg: string
 }>()
 
+const name = ref('DefineEmitsCom')
+
+// js版本
+// const emits = defineEmits(['changeMsg'])
 const emits = defineEmits<{
   (e: 'changeMsg', value: string): void
 }>()
@@ -16,6 +22,11 @@ const emits = defineEmits<{
 const handleChangeMsg = () => {
   emits('changeMsg', 'Hello TS')
 }
+
+defineExpose({
+    name,
+    handleChangeMsg
+})
 </script>
 
 <template>

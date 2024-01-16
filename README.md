@@ -50,3 +50,28 @@ npm run lint
 - 编译器宏只能在 <script setup>  块中使用，不需要被导入，并且会在处理 <script setup> 块时被一同编译掉。
 - 编译器宏必须在 <script setup>  的顶层使用，不可以在 <script setup>  的局部变量中引用。
 - 不要定义和 props 的属性同名的顶层变量，因为编译器宏会覆盖这些变量。
+
+# defineExpose
+- 在 Vue3 中，默认不会暴露任何在 <script setup>  中声明的绑定，即不能通过模板 ref  获取到组件实例声明的绑定。
+- Vue3 提供了 defineExpose 编译器宏，可以显式地暴露需要暴露的组件中声明的变量和方法。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
