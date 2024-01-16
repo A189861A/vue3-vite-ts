@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useAttrs } from 'vue'
 
 // js版本
 // defineProps({
@@ -22,6 +23,12 @@ const emits = defineEmits<{
 const handleChangeMsg = () => {
   emits('changeMsg', 'Hello TS')
 }
+
+
+const attrs = useAttrs()
+// js中使用
+console.log('---attrs---', attrs)
+console.log(attrs.title)  // 我是标题
 
 defineExpose({
     name,

@@ -56,8 +56,10 @@ npm run lint
 - Vue3 提供了 defineExpose 编译器宏，可以显式地暴露需要暴露的组件中声明的变量和方法。
 
 
-
-
+# 辅助函数
+- 在 <script setup> 中常用的辅助函数hooks api，主要有：useAttrs、useSlots、useCssModule
+- 模板中使用 $attrs 来访问 attrs 数据，与 Vue2 相比，Vue3 的 $attrs 还包含了 class 和 style 属性。
+- 在 <script setup> 中使用 useAttrs 函数获取 attrs 数据
 
 
 

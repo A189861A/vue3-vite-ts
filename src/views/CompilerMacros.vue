@@ -26,5 +26,5 @@
 
 <template>
     <DefinepropsCom :msg="msg" :list="list" />
-    <DefineEmitsCom :msg="msg" @changeMsg="changeMsg" ref="root"/>
+    <DefineEmitsCom :msg="msg" @changeMsg="changeMsg" title="我是标题" ref="root" class="aa"/>
 </template>
