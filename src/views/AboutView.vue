@@ -1,15 +1,24 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  aboutaView<Abouta />
+  <br>
+  ----------
+  <br>
+  aboutbView<Aboutb />
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<script>
+import { defineComponent, ref } from 'vue'
+import Abouta from '@/components/Abouta.vue'
+import Aboutb from '@/components/Aboutb.vue'
+
+export default defineComponent({
+  name: 'HelloWorld',
+  components: { Abouta, Aboutb },
+  props: {
+  },
+  setup(props, ctx) {
+    return {
+    }
+  },
+})
+</script>
