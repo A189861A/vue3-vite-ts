@@ -60,6 +60,10 @@ npm run lint
 - 在 <script setup> 中常用的辅助函数hooks api，主要有：useAttrs、useSlots、useCssModule
 - 模板中使用 $attrs 来访问 attrs 数据，与 Vue2 相比，Vue3 的 $attrs 还包含了 class 和 style 属性。
 - 在 <script setup> 中使用 useAttrs 函数获取 attrs 数据
+- 在模板中使用 $slots 来访问 slots 数据。
+- 在 <script setup> 中使用 useSlots 函数获取 slots 插槽数据。
+- 在 <script setup> 中使用 useCssModule 函数获取 css module 数据。
+
 
 
 
