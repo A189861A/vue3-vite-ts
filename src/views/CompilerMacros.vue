@@ -2,6 +2,8 @@
     import DefinepropsCom from '../components/DefinepropsCom.vue'
     import DefineEmitsCom from '../components/DefineEmitsCom.vue'
     import UseSlotsCom from '../components/UseSlotsCom.vue'
+    import UseCssModuleCom from '../components/UseCssModuleCom.vue'
+    
     import { onMounted, ref } from 'vue';
 
     // 此处暂时使用any，需要定义类型
@@ -34,4 +36,6 @@
         <div>具名插槽footer</div>
         </template>
     </UseSlotsCom>
+    <br />
+    <UseCssModuleCom />
 </template>

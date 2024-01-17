@@ -65,17 +65,10 @@ npm run lint
 - 在 <script setup> 中使用 useCssModule 函数获取 css module 数据。
 
 
-
-
-
-
-
-
-
-
-
-
-
+# useCssModule
+- 在 Vue3 中，也是支持 CSS Modules 的，在 <style>  上增加 module 属性，即<style module> 。
+- <style module> 代码块会被编译为 CSS Modules 并且将生成的 CSS 类作为 $style 对象的键暴露给组件，可以直接在模板中使用 $style。
+- 对于如 <style module="content"> 具名 CSS Modules，编译后生成的 CSS 类作为 content 对象的键暴露给组件，即module 属性值什么，就暴露什么对象。
 
 
 
