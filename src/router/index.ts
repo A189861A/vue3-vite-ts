@@ -20,10 +20,12 @@ const router = createRouter({
     {
       path: '/CompilerMacros',
       name: 'CompilerMacros',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/CompilerMacros.vue')
+    },
+    {
+      path: '/NamespaceView',
+      name: 'NamespaceView',
+      component: () => import('../views/NamespaceView.vue')
     }
   ]
 })

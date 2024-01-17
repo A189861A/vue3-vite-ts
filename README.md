@@ -71,6 +71,10 @@ npm run lint
 - 对于如 <style module="content"> 具名 CSS Modules，编译后生成的 CSS 类作为 content 对象的键暴露给组件，即module 属性值什么，就暴露什么对象。
 
 
+# 顶层await支持
+- <script setup> 中可以使用顶层 await。结果代码会被编译成 async setup()
+
+
 
 
 
