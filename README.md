@@ -74,7 +74,8 @@ npm run lint
 # 顶层await支持
 - <script setup> 中可以使用顶层 await。结果代码会被编译成 async setup()
 
-
+# 状态驱动的动态 CSS
+- Vue3 中 <style> 标签可以通过 v-bind 这一 CSS 函数将 CSS 的值关联到动态的组件状态上。
 
 
 
