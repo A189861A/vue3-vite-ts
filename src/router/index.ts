@@ -26,6 +26,16 @@ const router = createRouter({
       path: '/NamespaceView',
       name: 'NamespaceView',
       component: () => import('../views/NamespaceView.vue')
+    },
+    {
+      path: '/DefineDirectiveView',
+      name: 'DefineDirectiveView',
+      component: () => import('../views/DefineDirectiveView.vue')
+    },
+    {
+      path: '/DefineDirectiveView1',
+      name: 'DefineDirectiveView1',
+      component: () => import('../views/DefineDirectiveView1.vue')
     }
   ]
 })

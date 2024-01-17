@@ -8,6 +8,16 @@ import router from './router'
 
 const app = createApp(App)
 
+// 自定义全局指令
+app.directive("blur", {
+    mounted(el) {
+        const input = el as HTMLElement;
+        input.addEventListener('blur', function (e) {
+            alert('失去焦点了')
+        })
+    }
+  })
+
 app.use(createPinia())
 app.use(router)
 
