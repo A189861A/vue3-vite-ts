@@ -36,6 +36,11 @@ const router = createRouter({
       path: '/DefineDirectiveView1',
       name: 'DefineDirectiveView1',
       component: () => import('../views/DefineDirectiveView1.vue')
+    },
+    {
+      path: '/CompositionApi',
+      name: 'CompositionApi',
+      component: () => import('../views/CompositionApi.vue')
     }
   ]
 })
