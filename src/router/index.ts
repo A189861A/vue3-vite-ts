@@ -41,6 +41,11 @@ const router = createRouter({
       path: '/CompositionApi',
       name: 'CompositionApi',
       component: () => import('../views/CompositionApi.vue')
+    },
+    {
+      path: '/GetCurrentInstanceView',
+      name: 'GetCurrentInstanceView',
+      component: () => import('../views/GetCurrentInstanceView.vue')
     }
   ]
 })
