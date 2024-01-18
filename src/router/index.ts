@@ -46,6 +46,11 @@ const router = createRouter({
       path: '/GetCurrentInstanceView',
       name: 'GetCurrentInstanceView',
       component: () => import('../views/GetCurrentInstanceView.vue')
+    },
+    {
+      path: '/TypeScriptView',
+      name: 'TypeScriptView',
+      component: () => import('../views/TypeScriptView.vue')
     }
   ]
 })
